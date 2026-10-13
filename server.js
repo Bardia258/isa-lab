@@ -3,7 +3,7 @@ const DateUtils = require('./modules/utils');
 const FileManager = require('./modules/fileManager');
 const EnglishMessages = require('./lang/en/en');
 
-class Lab3Server {
+class Server {
     constructor() {
         this.dateUtils = new DateUtils();
         this.files = new FileManager();
@@ -99,5 +99,5 @@ class Lab3Server {
 }
 
 
-const app = new Lab3Server();
+const app = new Server();
 app.start();
